@@ -22,10 +22,11 @@ app.use("/manufacturer", manufacturerRoutes);
 app.use("/worker",workerRoutes);
 
 
+const port = process.env.PORT || 3001;
 sequelize
-  .sync() 
+  .sync()
   .then(() => {
     console.log("Database synced");
-    app.listen(process.env.PORT, () => console.log("Server running on port 3001"));
+    app.listen(port, () => console.log(`Server running on port ${port}`));
   })
   .catch((err) => console.error("Error syncing DB:", err));
