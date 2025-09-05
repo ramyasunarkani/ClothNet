@@ -11,12 +11,12 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link href="/register/manufacturer">
             <span className="bg-white text-indigo-700 px-6 py-3 rounded-md font-medium cursor-pointer">
-              I'm a Manufacturer
+              Iam a Manufacturer
             </span>
           </Link>
           <Link href="/register/worker">
             <span className="bg-indigo-600 text-white px-6 py-3 rounded-md font-medium cursor-pointer">
-              I'm a Gig Worker 
+              Iam a Gig Worker 
             </span>
           </Link>
         </div>
